@@ -17,6 +17,8 @@
 }
 
 - (void)drawRect:(CGRect)rect {
+    [[UIColor whiteColor] setFill];
+    UIRectFill(rect);
     //// Bezier Drawing
     UIBezierPath* bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(0.0, rect.size.height * 0.6)];
